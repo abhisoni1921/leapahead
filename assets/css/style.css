@@ -1607,21 +1607,29 @@ textarea.form-input {
     margin-bottom: 28px;
 }
 
+.top-course-sec .sec-title {
+    margin-bottom: 30px; /* Added spacing between title and list */
+}
+
 .top-course-sec .sec-title .h2-title {
     margin-bottom: 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .top-course-list-wp {
     display: flex;
-    justify-content: end;
+    justify-content: center; /* Changed from end to center */
     align-items: center;
-    height: 100%;
 }
 
 .top-course-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 61px;
+    justify-content: center; /* Added to center the list items */
 }
 
 .top-course-list .list-btn {
