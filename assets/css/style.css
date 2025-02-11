@@ -1650,6 +1650,26 @@ textarea.form-input {
     color: var(--pink-color-2);
 }
 
+.c-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px; /* Adds vertical and horizontal spacing */
+    max-width: 600px; /* Adjust for container width */
+    margin: auto;
+    padding: 10px;
+    justify-content: flex-start; /* Aligns items to the left */
+    margin-left: 0;
+    margin-top: -20px;
+}
+
+.c-list-item {
+    width: calc(50% - 15px); /* Ensures two items per row */
+    min-width: 250px; /* Prevents items from getting too small */
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-align: left; /* Ensures text is aligned to the left */
+}
+
+
 .top-course-sec .grid {
     margin-left: -12px;
     margin-right: -12px;
