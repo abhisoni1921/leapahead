@@ -1649,7 +1649,10 @@ textarea.form-input {
 .top-course-list .list-btn:hover {
     color: var(--pink-color-2);
 }
-
+.h-center{
+    text-align: center;
+    margin-top: 25px;
+}
 .c-list {
     display: flex;
     flex-wrap: wrap;
