@@ -110,7 +110,7 @@ p {
 }
 
 P:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 h1,
@@ -168,6 +168,11 @@ img {
     max-width: 100%;
 }
 
+.logo1{
+    width: 125px;
+    height: auto;
+    max-width: 100%;
+}
 ol,
 ul {
     list-style: none;
@@ -1446,6 +1451,12 @@ textarea.form-input {
     opacity: 1;
 }
 
+.bookbanner-image1{
+    width: 240px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 7px;
+}
 /*==========Main Partners CSS End==========*/
 
 /*==========Top Category List CSS Start==========*/
@@ -1595,130 +1606,78 @@ textarea.form-input {
     color: var(--pink-color-1);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-.demo-section {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: system-ui, -apple-system, sans-serif;
-    overflow-x: auto;
-  }
-  
-  .section-title {
-    text-align: center;
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
-  
-  .steps-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px 0;
-    min-width: min-content;
-  }
-  
-  .step-card {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    position: relative;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .step-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .step-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f5f5f5;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  
-  .step-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .step-arrow {
-    position: absolute;
-    right: -25px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #666;
-    z-index: 1;
-  }
-  
-  .step-card:last-child .step-arrow {
-    display: none;
-  }
-  
-  .step-card h3 {
-    color: #333;
-    margin: 0 0 10px;
-    font-size: 1.1rem;
-  }
-  
-  .step-card p {
-    
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.5;
+.bookcard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.bookcard {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);  
+  padding: 7px;  
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.bookcard:hover {
+  transform: scale(1.05);
+}
+
+.bookbanner-image {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255);
+  margin-bottom: 15px;
+}
+
+.pa {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 16px;
+}
+/* h1 {
+  font-family: 'Righteous', sans-serif;
+  color: rgba(255,255,255,0.98);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+} */
  
-  }
-  .b{
+.c{
     text-align: center;
-  }
-  
-  @media (max-width: 768px) {
-    .demo-section {
-      padding: 20px 10px;
-    }
-    
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    
-    .steps-container {
-      padding: 10px 0;
-    }
-    
-    .step-card {
-      min-width: 150px;
-      padding: 15px;
-    }
-    
-    .step-icon {
-      width: 60px;
-      height: 60px;
-    }
-    
-    .step-arrow {
-      right: -20px;
-      font-size: 20px;
-    }
-  }
+}
+
+
 /*==========Top Category List CSS End==========*/
 
 /*==========Top Course CSS Start==========*/
+
+
 
 .top-course-sec {
     padding-bottom: 98px;
@@ -2025,13 +1984,18 @@ textarea.form-input {
     margin-left: auto;
 }
 
+.about-image1{
+    max-width: 444px;
+    max-height: 557px;
+}
+
 .about-image-box-bg {
-    width: 487px;
+    width: 400px;
     height: auto;
     aspect-ratio: 1 / 1;
     position: absolute;
-    left: 0;
-    bottom: 1px;
+    left: 70px;
+    bottom: -20px;
     background: var(--gradient-color);
     border-radius: 30px;
     overflow: hidden;
@@ -2066,7 +2030,7 @@ textarea.form-input {
 }
 
 .about-image img {
-    max-width: 444px;
+    max-width: 558px;
     max-height: 557px;
 }
 
