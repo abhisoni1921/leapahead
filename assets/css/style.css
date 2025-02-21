@@ -1972,6 +1972,28 @@ p {
 
 /*==========Top Course CSS End==========*/
 
+.bookcard {
+    position: relative;
+    /* Assuming existing styles */
+}
+
+.number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6100;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
 /*==========About Us CSS Start==========*/
 
 .about-sec {
