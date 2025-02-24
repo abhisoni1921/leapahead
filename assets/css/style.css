@@ -190,7 +190,16 @@ ul {
     text-transform: uppercase;
     margin-bottom: 24px;
 }
-
+.sub-title1 {
+    display: block;
+    font-size: 22px;
+    line-height: 22px;
+    color: #19254b;
+    font-family: var(--title-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
 .h1-title {
     font-size: 80px;
     line-height: 90px;
