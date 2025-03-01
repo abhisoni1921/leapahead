@@ -171,7 +171,7 @@ img {
 .logo1{
     width: 145px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     max-width: 100%;
 }
 ol,
@@ -1713,7 +1713,17 @@ p {
 
 /*==========Top Course CSS Start==========*/
 
+.footer-log1{
+    margin-left: -10rem;
+    margin-top: -10px;
+}
 
+.main-logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    
+}
 
 .top-course-sec {
     padding-bottom: 98px;
@@ -4102,6 +4112,7 @@ p {
     overflow: hidden;
     border-radius: var(--border-radius-10);
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .course-detail-image img {
