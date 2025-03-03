@@ -419,8 +419,8 @@
                                 <textarea rows="4" required id="Message"></textarea>
                                 <label>Message...</label>
                             </div>
-                            <div class="header-btn">
-                                <button class="sec-btn" type="submit">Submit</button>
+                            <div class="header1-btn">
+                                <button class="sec1-btn" type="submit">Submit</button>
                             </div>
                         </form>
                         <style>
@@ -498,6 +498,7 @@ button {
     animation: fadeIn 1s ease forwards;
 }
 
+
 /* button:hover {
     background: #182848;
     transform: translateY(-2px);
@@ -555,6 +556,61 @@ button {
     display: flex;
             justify-content: center;
             align-items: center;
+}
+.header1-btn {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0; /* Using rem for scalable spacing */
+    width: 100%; /* Ensures container takes full width */
+    padding: 0 1rem; /* Adds some horizontal padding for small screens */
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.sec1-btn {
+    padding: 0.75rem 1.5rem; /* Base padding in rem for scalability */
+    background: linear-gradient(-90deg, rgba(164, 68, 253, 1) 0%, rgba(208, 94, 252, 1) 100%);
+    color: white;
+    border: none;
+    border-radius: 0.3125rem; /* 5px in rem */
+    cursor: pointer;
+    font-size: clamp(14px, 4vw, 16px); /* Scales between 14px and 16px based on viewport */
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Caps width on larger screens */
+}
+
+/* Hover state - only for devices that support hover */
+@media (hover: hover) {
+    .sec1-btn:hover {
+        background-color: #45a049;
+    }
+}
+
+.sec1-btn:active {
+    background-color: #3d8b40;
+}
+
+/* Focus state for accessibility */
+.sec1-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1875rem rgba(76, 175, 80, 0.3); /* 3px in rem */
+}
+
+/* Media query for larger screens (tablets and up) */
+@media (min-width: 768px) {
+    .sec1-btn {
+        width: auto; /* Returns to content-based width */
+        padding: 0.875rem 2rem; /* Slightly larger padding */
+    }
+}
+
+/* Media query for very small screens (below 360px) */
+@media (max-width: 360px) {
+    .sec1-btn {
+        padding: 0.625rem 1rem; /* Smaller padding */
+        max-width: 100%; /* Allows full width on tiny screens */
+    }
 }
                         </style>
                     </div>
