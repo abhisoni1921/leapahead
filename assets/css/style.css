@@ -1325,8 +1325,8 @@ textarea.form-input {
 
 .congra-box {
     position: absolute;
-    top: 320px;
-    right: 0;
+    top: 214px;
+    right: -97px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -2058,12 +2058,12 @@ p {
 }
 
 .about-image-box-bg {
-    width: 400px;
+    width: 450px;
     height: auto;
     aspect-ratio: 1 / 1;
     position: absolute;
-    left: 70px;
-    bottom: -20px;
+    left: 45px;
+    bottom: -90px;
     background: var(--gradient-color);
     border-radius: 30px;
     overflow: hidden;
