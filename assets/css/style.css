@@ -1926,8 +1926,47 @@ p {
     list-style-type: disc;
     display: list-item;
     font-weight: normal;
+    
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure content is not hidden */
+    word-break: break-word; /* Break long words to prevent overflow */
+    
+    list-style-position: inside; /* Ensure bullets are inside the padding */
+    
 }
 
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .c-list-Hitem,
+    .c-list-item,
+    .c-list-hitem {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
+        min-width: 200px; /* Adjust min-width for smaller screens */
+    }
+
+    .c-list {
+        gap: 5px; /* Reduce gap for smaller screens */
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .c-list-Hitem,
+    .c-list-item,
+    .c-list-hitem {
+        flex: 1 1 100%; /* One item per row on very small screens */
+        min-width: 100%; /* Full width for very small screens */
+    }
+
+    .c-list-item1 {
+        width: 100%; /* Full width for very small screens */
+        margin-left: 0; /* Remove left margin for full width */
+    }
+
+    .c-list-subitem {
+        margin-left: 10px; /* Reduce margin for smaller screens */
+    }
+}
 
 
 
