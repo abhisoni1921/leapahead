@@ -1881,6 +1881,8 @@ p {
     margin-bottom: 10px; /* Adds space between rows */
     font-weight: 500;
     margin-left: 10px;
+    word-break: break-word; /* Break long words to prevent overflow */
+    
 }
 
 .c-list {
@@ -1909,7 +1911,13 @@ p {
     white-space: nowrap; 
     text-align: left;
     font-weight: 400;
-    margin-left: 10px;
+    margin-left: 25px;
+    word-break: break-word; /* Break long words to prevent overflow */
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure content is not hidden */
+    word-break: break-word; /* Break long words to prevent overflow */
+    list-style-position: inside; /* Ensure bullets are inside the padding */
+    text-indent: -17px; /* Adjust this value to match margin-left */
 }
 .c-list-hitem {
     
@@ -1919,20 +1927,19 @@ p {
     text-align: left;
     font-weight: 500;
     
+    
 }
 
 .c-list-subitem {
-    margin-left: 20px;
+    margin-left: 25px; /* Adjust this value as needed */
     list-style-type: disc;
     display: list-item;
     font-weight: normal;
-    
     white-space: normal; /* Allow text to wrap */
     overflow: visible; /* Ensure content is not hidden */
     word-break: break-word; /* Break long words to prevent overflow */
-    
     list-style-position: inside; /* Ensure bullets are inside the padding */
-    
+    text-indent: -20px; /* Adjust this value to match margin-left */
 }
 
 /* Media Queries for Mobile Devices */
@@ -1964,7 +1971,7 @@ p {
     }
 
     .c-list-subitem {
-        margin-left: 10px; /* Reduce margin for smaller screens */
+        margin-left: 30px; /* Reduce margin for smaller screens */
     }
 }
 
