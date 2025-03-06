@@ -5990,6 +5990,7 @@ p {
 
     .students-endroll-box {
         padding: 12px;
+        left: 186px;
     }
 
     .students-endroll-image img {
@@ -7270,6 +7271,7 @@ p {
 
     .about-image-box-bg {
         aspect-ratio: 1 / 0.93023255;
+        margin-left: -42px;
     }
 
     .about-content .sec-title .h2-title {
@@ -7476,6 +7478,7 @@ p {
     .h3-title {
         font-size: 32px;
         line-height: 42px;
+        text-align: center;
     }
 
     .h5-title {
