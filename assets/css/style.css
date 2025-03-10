@@ -1442,6 +1442,11 @@ textarea.form-input {
     }
 }
 
+@media screen and (max-width: 767px){
+    .related-adjust{
+        margin-bottom: -100px;
+    }
+}
 
 .main-partners {
     padding: 52px 0;
