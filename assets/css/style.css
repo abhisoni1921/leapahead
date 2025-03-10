@@ -1432,6 +1432,17 @@ textarea.form-input {
 
 /*==========Main Partners CSS Start==========*/
 
+.related-adjust{
+    margin-top: -240px;
+}
+
+@media screen and (max-width: 400px){
+    .related-adjust{
+        margin-bottom: -100px;
+    }
+}
+
+
 .main-partners {
     padding: 52px 0;
     background-color: var(--blue-color);
@@ -1882,6 +1893,12 @@ p {
     font-weight: 500;
     margin-left: 10px;
     word-break: break-word; /* Break long words to prevent overflow */
+    word-break: break-word; /* Break long words to prevent overflow */
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure content is not hidden */
+    word-break: break-word; /* Break long words to prevent overflow */
+    list-style-position: inside; /* Ensure bullets are inside the padding */
+    text-indent: -17px; /* Adjust this value to match margin-left */
     
 }
 
