@@ -1338,6 +1338,7 @@ textarea.form-input {
     -webkit-backdrop-filter: blur(15px);
 }
 
+
 .congra-icon {
     --size: 50px;
     width: var(--size);
